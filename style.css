@@ -1,9 +1,152 @@
-.main{
-    display: 
+:root {
+    -- spaceindigo: #2D3047;
+    --teal: #028090;
+    --Lavender blush: #EEE5E9;
+    --neao ice: #34F6F2;
+    --vibrant coral: #FF5E5B;
 }
 
-ul{
+
+{ box-sizing: border-box; }
+
+
+
+
+header {
+    background-color: #2D3047;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #028090;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+.head {
+align-items: center;
+justify-content: center;
+font-size: 50px;
+text-align: center;
+font-family: "Times New Roman", Times, serif;
+}
+
+
+
+
+   
+#container1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #028090;
+    color: black;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200;
+    margin: auto;
+    align-self: start;
+}
+
+
+
+
+
+
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
+
+
+
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+
+
+
+.navbar {
+    overflow: hidden;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+    text-decoration: none;
+}
+
+
+.pic2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+.mission {
+    font-size: 1.5em;
+    font-family: "Times New Roman", Times, serif;
+    background-color: #028090;
+    text-align: center;
+}
+
+
+footer {
+    background-color: #2D3047;
+    color: black;
+    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    align-items: flex-end;
+}
+
+
+#id {
+    font-size: 20px;
+}
+
+
+section {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #2D3047;
+    color: black;
+}
+
+
+#contact {
+    padding: 20px;
+    margin: 20px;
+}
+

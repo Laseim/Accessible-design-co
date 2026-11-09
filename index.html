@@ -4,46 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Accessible Design Coporations</title>
+    <title>Accessible Design Company</title>
 </head>
-<body>
+<body>   
+    <header class="header">
+        <img class="pic2" src="picc.png" alt="logo">
+    <nav role="navigation" aria-label="Main Navigation">
+        <ul class="navbar">
+            <li><a href="default.asp">Home</a></li>
+            <li><a href="about.asp">About</a></li>
+            <li><a href="services.asp">Services</a></li>
+            <li><a href="Contact.asp">Contact</a></li>
+        </ul>
+    </nav>
+    <h1 class="head">Accessible Design Co.</h1>
+    </header>
 
-    <ul>
-        <li><a href="default.asp">Home</a></li>
-        <li><a href="about.asp">About</a></li>
-        <li><a href="services.asp">Services</a></li>
-        <li><a href="Contact.asp">Contact</a></li>
-    </ul>
-    
-<header>
-<h1>Accessible Design Coporations</h1>
-<img src="accessible.jpg" alt="wheelchair" width="200" height="100">
-<h2>Where we have an answer to all your problems!</h2>
-</header>
 
-<main>
-    <div class="main">
-    <div  Here at ADC or (Accessible Design Coporations) we take pride in making products, enviornments, websites
-    and digital tools usable for all! 
-    
-    </div> 
-</main>
-    
 
-<section>
-    list of products we sell how they can help someone who would need them 
+
+    <main id="container1">
+        <section class="mission" id="main">
+            <h1> Accessible Design Company, where we make the world
+                easier, safer, and more welcoming for everyone.
+            </h1>
+               
+            <p >At Accessible Design Co., we are dedicated to creating inclusive 
+            and accessible environments for all individuals. Our mission is to break 
+            down barriers and ensure that everyone, regardless of their abilities, 
+            can fully participate in society. We believe that accessibility is not just 
+            a legal requirement, but a moral imperative that benefits everyone.</p>
+
+        </section>
+       
+    
+<section class="section" id="about">
+    <h2>About us</h2>
+    <article>
+        <p>Our goal is to make the web accessible to everyone, regardless of their abilities or disabilities.
+     We believe everyone should have an equal opportunity to browse, learn, and interact online without barriers.</p>
+    </article>
+</section> 
+
+
+<section class="section" id="services">
+    <article>
+        <h2>Services</h2>
+        <p>We offer a range of services to help businesses and organizations create accessible digital experiences. 
+            Our services include website accessibility audits, assistive technology testing, and accessibility training for staff. 
+            We also provide guidance on implementing accessibility best practices and ensuring compliance with accessibility standards.</p>
+    </article>
 </section>
-    
-<article>
 
 
-</article>
+<section class="section" id="contact">
+    <article>
 
-<footer>
-    
+ <h2>Contact</h2>
+
+      
+      <form id="contact-form" novalidate>
+
+       
+        <label for="name">Name</label>
+        <input type="text" id="name" required aria-describedby="name-error">
+        <p class="error" id="name-error"></p>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required aria-describedby="email-error">
+        <p class="error" id="email-error"></p>
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" required aria-describedby="subject-error">
+        <p class="error" id="subject-error"></p>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" required aria-describedby="message-error"></textarea>
+        <p class="error" id="message-error"></p>
+
+        <button class="btn" type="submit">Send</button>
+
+        
+        <p class="success" id="success" aria-live="polite"></p>
+      </form>
+
+    </article>
+</section>
+
+<footer  class="footer">
+   
+    <p> Our Email and phone number: laseimjohnson@gmail.com | 646-939-9842</p>
+    <p>&copy; Laseim Johnson</p>
+    All Rights Reserved.
+
+    <p>
+      Our Github page <a href="https://github.com/Laseim/Accessible-design-co" aria-label="Our GitHub page">GitHub</a>
+    </p>
 </footer>
 
-
+</main>
 
 </body>
 </html>
